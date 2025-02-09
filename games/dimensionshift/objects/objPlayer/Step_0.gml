@@ -16,6 +16,7 @@ inputMagnitude = (keyRight - keyLeft != 0) || (keyDown - keyUp != 0);
 vx = lengthdir_x(spd * inputMagnitude, inputDirection);
 vy = lengthdir_y(spd * inputMagnitude, inputDirection);
 
+
 if(objDimensions.currentdimension==1){
 	if(place_meeting(x+vx, y,  objParentSolid1)){
 		vx = 0;
@@ -31,19 +32,19 @@ if(objDimensions.currentdimension==1){
 	}
 	
 	// Collision Depths
-	var collision = ds_list_create();
+	/*var collision = ds_list_create();
 	
-	with(hitbox)instance_place_list(x,y,objHitbox1, collision, true);
+	with(hitbox)instance_place_list(x,y,[objHitbox1, objGrasses], collision, true);
 	for(var i=0; i < ds_list_size(collision); i++){
 		
-		if(y>collision[| i].y){
+		if(hitbox.y>collision[| i].y){
 			collision[| i].object.depth=depth+5;
 			
 		}else{
 			collision[| i].object.depth=depth-5;
 
 		}
-	}
+	}*/
 	
 }
 if(objDimensions.currentdimension==2){
@@ -69,11 +70,26 @@ if(objDimensions.currentdimension==2){
 		if(y>collision[| i].y){
 			collision[| i].object.depth=depth+5;
 			
-		}else{
+		} else {
 			collision[| i].object.depth=depth-5;
 
 		}
 	}
+}
+
+if(hit){
+	if(flashcd<=0){
+		if image_alpha==.3 image_alpha=1;
+		else image_alpha=.3;
+		flashcd=flashrate
+	}
+	hitcd-=dt;
+	flashcd-=dt;
+	if(hitcd<=0){
+		hit=false;
+		image_alpha=1;
+	}
+	
 }
 
 

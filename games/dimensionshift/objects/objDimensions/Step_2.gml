@@ -23,7 +23,7 @@ if(cd<=0){
 				flashAlpha=.75;
 				cd=maxcd;
 			} else {
-				redFlashAlpha=.5
+				redFlash=5
 				cd=5;
 			}
 		

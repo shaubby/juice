@@ -12,8 +12,8 @@
     "path":"folders/Objects/FirstDimension/objects.yy",
   },
   "parentObjectId":{
-    "name":"objParentSolid1",
-    "path":"objects/objParentSolid1/objParentSolid1.yy",
+    "name":"objNotBulletProof1",
+    "path":"objects/objNotBulletProof1/objNotBulletProof1.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

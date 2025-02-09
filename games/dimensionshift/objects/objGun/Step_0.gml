@@ -6,7 +6,7 @@ else image_yscale=-1;
 var dt = delta_time/100000;
 
 
-if mouse_check_button_pressed(mb_left) and cd <=0{
+if mouse_check_button(mb_left) and cd <=0{
 	var direct = point_direction(x, y, mouse_x, mouse_y)
 	with(instance_create_layer(x+lengthdir_x(6, direct), y+lengthdir_y(6, direct), "Instances", objPlayerProjectile)) {
 		dir=direct
@@ -15,6 +15,6 @@ if mouse_check_button_pressed(mb_left) and cd <=0{
 		dmg=10
 		image_angle=dir
 	}
-	cd+=firerate;
+	cd=firerate;
 }
-if cd!=0 cd--;
+if cd!=0 cd-=dt;

@@ -1,2 +1,2 @@
 x=objPlayer.x;
-y=objPlayer.y;
+y=objPlayer.y+8;

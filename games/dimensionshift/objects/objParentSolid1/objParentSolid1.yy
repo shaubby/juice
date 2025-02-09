@@ -10,8 +10,8 @@
     "path":"folders/Objects/FirstDimension.yy",
   },
   "parentObjectId":{
-    "name":"objFirstDimension",
-    "path":"objects/objFirstDimension/objFirstDimension.yy",
+    "name":"objEnemyAvoidance1",
+    "path":"objects/objEnemyAvoidance1/objEnemyAvoidance1.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

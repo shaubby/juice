@@ -13,8 +13,8 @@
     "path":"folders/Objects/SecondDimension.yy",
   },
   "parentObjectId":{
-    "name":"objSecondDimension",
-    "path":"objects/objSecondDimension/objSecondDimension.yy",
+    "name":"objEnemyAvoidance2",
+    "path":"objects/objEnemyAvoidance2/objEnemyAvoidance2.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

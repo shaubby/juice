@@ -1,10 +1,10 @@
 
-
+layer_set_visible("BackgroundDungeon", true)
 layer_set_visible("DungeonTiles", true)
 layer_set_visible("DungeonTilesOver", true)
 layer_set_visible("DungeonTilesUnder", true)
 layer_set_visible("ForestTiles", false)
-layer_set_visible("ForestTiles2", false)
+layer_set_visible("BackgroundWater", false)
 currentdimension=2
 
 
